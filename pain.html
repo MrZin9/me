@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Painting | Ani's Art</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #071426, #18264c);
+      color: white;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 22px 8%;
+      background: #08152b;
+      border-bottom: 2px solid #4d61ff;
+      text-align: center;
+    }
+
+    header h1 {
+      color: #8495ff;
+      font-size: 32px;
+    }
+
+    .intro {
+      text-align: center;
+      padding: 45px 20px 30px;
+    }
+
+    .intro h2 {
+      font-size: 38px;
+      color: #91a1ff;
+      margin-bottom: 15px;
+    }
+
+    .intro p {
+      color: #d3def5;
+      line-height: 1.8;
+      max-width: 650px;
+      margin: auto;
+    }
+
+    .painting-container {
+      max-width: 1000px;
+      margin: 10px auto 50px;
+      padding: 25px;
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 30px;
+      align-items: center;
+      background: #0b1a32;
+      border: 2px solid #344d91;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px #0005;
+      width: 90%;
+    }
+
+    .painting-frame {
+      padding: 10px;
+      background: #e5e8ff;
+      border: 4px solid #657cff;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #526aff55;
+    }
+
+    .painting-frame img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 500px;
+      object-fit: contain;
+      border-radius: 5px;
+    }
+
+    .details h3 {
+      color: #91a1ff;
+      margin-bottom: 10px;
+      font-size: 25px;
+    }
+
+    .details p {
+      color: #d3def5;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .details strong {
+      color: white;
+    }
+
+    .back-link {
+      display: inline-block;
+      padding: 13px 24px;
+      background: #4d61ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+
+    .back-link:hover {
+      background: #8495ff;
+      color: #071426;
+      transform: translateY(-3px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #08152b;
+      color: #bdc9e5;
+      border-top: 1px solid #344d91;
+    }
+
+    @media (max-width: 700px) {
+      .painting-container {
+        grid-template-columns: 1fr;
+      }
+
+      .intro h2 {
+        font-size: 30px;
+      }
+
+      .painting-frame img {
+        max-height: 400px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🎨 Ani's Art</h1>
+  </header>
+
+  <section class="intro">
+    <h2>My Beautiful Painting</h2>
+    <p>
+      Welcome to my art gallery! This is one of my favourite
+      paintings. Art allows me to express my creativity and imagination.
+    </p>
+  </section>
+
+  <main class="painting-container">
+
+    <div class="painting-frame">
+      <img src="1000610829.jpg"
+           alt="My original painting">
+    </div>
+
+    <div class="details">
+      <h3>Seagull by the coast</h3>
+
+      <p>
+        <strong>Artist:</strong> Ani Collins
+      </p>
+
+      <p>
+        <strong>Type:</strong> Painting
+      </p>
+
+      <p>
+        <strong>About my painting:</strong><br>
+        This is a special piece of art that shows my creativity
+        and imagination. I enjoy using colours to bring my ideas to life.
+      </p>
+
+      <a href="index.html" class="back-link">
+        Back to My Website
+      </a>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>Made with ❤️ by Ani Collins</p>
+    <p>© 2026 My Art Gallery</p>
+  </footer>
+
+</body>
+</html>
